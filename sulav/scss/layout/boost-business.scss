@@ -1,0 +1,110 @@
+// ----boost your business----
+.boost-your-business {
+    margin: 20px 0px 50px 0px;
+    .blue-container {
+        background-image: $grediantColor;
+        position: relative;
+        .boost-business-figure {
+            position: absolute;
+            height: 100%;
+        }
+        .content {
+            padding: 45px 0px 45px 0px;
+            margin: auto;
+            .heading-main {
+                width: 600px;
+                margin: auto;
+                text-align: center;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 42px;
+                color: $white-text;
+            }
+            .paragraph-main {
+                text-align: center;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $secondary-text;
+                padding: 15px 0px 15px 0px;
+            }
+            .btn-outer {
+                text-align: center;
+                .btn {
+                    .btn-inner {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .boost-your-business {
+        .blue-container {
+            .content {
+                .heading-main {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                .paragraph-main {
+                    font-size: 18px;
+                    line-height: 30px;
+                    padding: 10px 0px 10px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .boost-your-business {
+        .blue-container {
+            .content {
+                padding: 25px 0px 25px 0px;
+                .heading-main {
+                    width: 100%;
+                    font-size: 22px;
+                    line-height: 20px;
+                }
+                .paragraph-main {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 10px 0px 10px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .boost-your-business {
+        .blue-container {
+            .content {
+                padding: 15px 0px 15px 0px;
+                .heading-main {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .paragraph-main {
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding: 5px 0px 5px 0px;
+                }
+                .btn-outer {
+                    text-align: center;
+                    .btn {
+                        font-size: 14px;
+                        padding: 5px 10px;
+                        .btn-inner {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

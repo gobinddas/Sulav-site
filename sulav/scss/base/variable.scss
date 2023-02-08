@@ -1,0 +1,35 @@
+// color-------
+$primary:#2563EB;
+$primary-text:#0A0A0A;
+$white-text:#FAF4F4;
+$secondary-text: #969696;
+$background:#EDEDED;
+$background-second:#F5F5F5;
+$grediantColor:linear-gradient(90deg, #05173C 0%, #637CC1 100%);
+$background-footer:#141414;
+// -----------html-variable-----------
+// ---inner layout---------
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+// ---for btn1------
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border-color: none;
+    background-color: $primary;
+    color: $white-text;
+    display: inline-block;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.btn:hover {
+    background-image: $grediantColor;
+}

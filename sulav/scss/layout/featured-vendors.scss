@@ -1,0 +1,177 @@
+// ---featured vendors-------
+.card-section {
+    .heading-flex {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-weight: 500;
+            font-size: 24px;
+            color: $primary-text;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: $primary;
+        }
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 80px;
+    margin: 50px 0px 50px 0px;
+    column-gap: 50px;
+    .product {
+        box-sizing: content-box;
+        background-color: $background;
+        .woocommerce-LoopProduct-link {
+            text-decoration: none;
+            .attachment-woocommerce_thumbnail {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+            .woocommerce-loop-product__title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                padding: 10px 0px 10px 0px;
+                color: $primary-text;
+                background-color: $background;
+                margin: 0px;
+            }
+        }
+    }
+    .feature-product {
+        background-color: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .feature-woocommerce-thumbnail {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+        .feature-product-description {
+            padding: 20px 10px;
+            border: 1px solid #F1F5F5;
+            .product-name {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $primary;
+            }
+            .product-sub-discription {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: $primary-text;
+                padding: 10px 0px 10px 0px;
+            }
+            .pricing-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .new-price {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: $primary-text;
+                }
+                .old-price {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-decoration-line: line-through;
+                    color: $secondary-text;
+                }
+                .btn {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 5px 12px;
+                }
+            }
+        }
+        .heart {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 20px;
+            padding: 3px 8px;
+            background-color: rgba(37, 99, 235, 0.1);
+            border-radius: 3px;
+            .fa-heart:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    .products {
+        .feature-product-description {
+            .pricing-row {
+                h2 {
+                    font-size: 12px !important;
+                    line-height: 18px;
+                }
+                h3 {
+                    font-size: 12px !important;
+                    line-height: 18px;
+                }
+                .btn {
+                    font-size: 10px !important;
+                    padding: 5px 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .products {
+        grid-template-columns: auto auto auto;
+        .feature-product {
+            .feature-product-description {
+                p {
+                    font-size: 10px;
+                }
+            }
+            .heart {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin-top: 10px;
+                margin-right: 20px;
+                padding: 3px 3px 0px 3px;
+                background-color: rgba(37, 99, 235, 0.1);
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .products {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .card-section {
+        .heading-flex {
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .products {
+        grid-template-columns: auto;
+    }
+}

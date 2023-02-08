@@ -1,0 +1,90 @@
+.profile {
+    .inner-container {
+        margin-left: 60px;
+        display: flex;
+        gap: 100px;
+        .catagories {
+            .catagories-title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $primary-text;
+                margin-bottom: 40px;
+            }
+            .catagories-name {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $secondary-text;
+                margin-top: 10px;
+            }
+        }
+        .product-items {
+            width: 100%;
+            .fill-and-search {
+                display: flex;
+                align-items: center;
+                input {
+                    width: 70%;
+                    padding: 10px 40px;
+                    border-radius: 20px 0px 0px 20px;
+                    border: 1px solid #EAEAEA;
+                    // border-radius: 40px;
+                    outline: none;
+                }
+                .search-in-form {
+                    border-radius: 0px 20px 20px 0px;
+                    padding: 10px;
+                    width: 20px;
+                    background-color: $primary;
+                }
+            }
+            .products {
+                grid-template-columns: auto auto auto;
+                margin: 20px 0px 40px 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .profile {
+        .inner-container {
+            .product-items {
+                .products {
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .profile {
+        .inner-container {
+            margin-left: 0px;
+            flex-direction: column;
+            gap: 30px;
+            .product-items {
+                .products {
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .profile {
+        .inner-container {
+            margin-left: 0px;
+            flex-direction: column;
+            gap: 10px;
+            .product-items {
+                .products {
+                    grid-template-columns: auto;
+                }
+            }
+        }
+    }
+}
